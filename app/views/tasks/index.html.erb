@@ -1,0 +1,10 @@
+<h1>Your tasks!</h1>
+
+<% @tasks.each do |task| %>
+<%  if task.completed == false
+      puts "no"
+    else
+      puts "yes"
+    end %>
+<h4><%= task.completed %> <%= task.title %></h4>
+<% end %>
