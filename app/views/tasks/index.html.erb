@@ -6,5 +6,5 @@
     else
       puts "yes"
     end %>
-<h4><%= task.completed %> <%= task.title %></h4>
+<h3><%= task.completed %> <%= link_to task.title, task_path(task) %><h3>
 <% end %>
